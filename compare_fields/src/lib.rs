@@ -9,7 +9,6 @@
 //!
 //! ```rust
 //! use compare_fields::{CompareFields, Comparison, FieldComparison};
-//! use compare_fields_derive::CompareFields;
 //!
 //! #[derive(PartialEq, Debug, CompareFields)]
 //! pub struct Bar {
@@ -82,6 +81,10 @@
 //! ];
 //! assert_eq!(bar_a.compare_fields(&bar_b), bar_a_b);
 //! ```
+
+#[cfg(feature = "derive")]
+pub use compare_fields_derive::CompareFields;
+
 use itertools::{EitherOrBoth, Itertools};
 use std::fmt::Debug;
 

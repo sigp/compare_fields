@@ -1,14 +1,19 @@
 [package]
 name = "compare_fields"
-version = "0.2.0"
-authors = ["Paul Hauner <paul@paulhauner.com>"]
-edition = { workspace = true }
-
-[package.metadata.cargo-udeps.ignore]
-development = ["compare_fields_derive"] # used in doc-tests
+description = "Field-by-field comparisons for structs and vecs"
+documentation = "https://docs.rs/compare_fields"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
 
 [dependencies]
-itertools = { workspace = true }
+itertools = "0.14"
 
-[dev-dependencies]
-compare_fields_derive = { workspace = true }
+# Optional dependencies.
+compare_fields_derive = { version = "0.1.0", path = "../compare_fields_derive", optional = true }
+
+[features]
+default = ["derive"]
+derive = ["dep:compare_fields_derive"]
