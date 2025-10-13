@@ -1,6 +1,6 @@
 # compare_fields
 
-[![CI](https://github.com/sigp/compare_fields/workflows/CI/badge.svg)](https://github.com/sigp/compare_fields/actions)
+[![CI](https://github.com/sigp/compare_fields/workflows/test-suite/badge.svg)](https://github.com/sigp/compare_fields/actions)
 [![Crates.io](https://img.shields.io/crates/v/compare_fields.svg)](https://crates.io/crates/compare_fields)
 [![Documentation](https://docs.rs/compare_fields/badge.svg)](https://docs.rs/compare_fields)
 
